@@ -1,12 +1,20 @@
-//Class 1:
+ //global variables
+ //Class 1:
         // Fork and clone the repo and set up your project workspace and link files
         // Write HTML for your project
 //Class 2:  
+var userChoice = "";
+var computerChoice = "";
+var winner ="";
+var choices =["rock", "scissors", "paper"];
+
+
         // Declare four global variables for intial state of the list of choices, the computer choice, the user choice, and the winner.  
         // Practice using console.log() and debugger to debug your code
         // Create your document ready function. 
         // Create a click hander for when the "Shoot!" button is clicked, takes in the user choice from the input field, 
         // Display the user choice to the output screen
+        
 //Class 3:  
         // Randomly choose among 'rock', 'paper', or 'scissors' from the list of choices 
         // Display the computer choice to the output screen
@@ -19,7 +27,14 @@
 //****************** SERIOUSLY TEST USING console.log()!!! ******************
 
 //GLOBAL VARIABLES
+$(document).ready(function() {
+        $("button").click(function(){
+                var value= $("#input").val(); 
+                $("#result").append(value);
+        });
 
+        
+})
 
 
 //FUNCTIONS
